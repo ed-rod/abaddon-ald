@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>uk.co.eduardo.abaddon</groupId>
+  <artifactId>ald-parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>math-parent</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>aws-public</id>
+      <name>AWS Nexus</name>
+      <url>http://ec2-18-188-104-82.us-east-2.compute.amazonaws.com:8081/nexus/content/groups/public/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>personal</id>
+      <url>http://ec2-18-188-104-82.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases</url>
+    </repository>
+  </distributionManagement>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>uk.co.eduardo.abaddon</groupId>
+        <artifactId>ald-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>uk.co.eduardo.abaddon</groupId>
+        <artifactId>ald-ui</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>uk.co.eduardo.abaddon</groupId>
+        <artifactId>ald-datamodel</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>uk.co.eduardo.abaddon</groupId>
+        <artifactId>ald-resources</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>uk.co.eduardo.abaddon</groupId>
+        <artifactId>ald-application</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+  <modules>
+    <module>ald-core</module>
+    <module>ald-datamodel</module>
+    <module>ald-ui</module>
+    <module>ald-application</module>
+  </modules>
+
+</project>

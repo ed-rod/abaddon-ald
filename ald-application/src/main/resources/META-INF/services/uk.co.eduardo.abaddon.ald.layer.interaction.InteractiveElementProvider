@@ -1,0 +1,3 @@
+uk.co.eduardo.abaddon.ald.layer.interaction.NpcInteractiveElementProvider
+uk.co.eduardo.abaddon.ald.layer.interaction.HeroInteractiveElementProvider
+uk.co.eduardo.abaddon.ald.layer.interaction.ActionInteractiveElementProvider

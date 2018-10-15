@@ -1,0 +1,7 @@
+uk.co.eduardo.abaddon.ald.layer.control.SelectObjectControlLayerProvider
+uk.co.eduardo.abaddon.ald.layer.control.PencilControlLayerProvider
+uk.co.eduardo.abaddon.ald.layer.control.FillControlLayerProvider
+uk.co.eduardo.abaddon.ald.layer.control.EyeDropControlLayerProvider
+uk.co.eduardo.abaddon.ald.layer.control.SpriteCreationControlLayerProvider
+uk.co.eduardo.abaddon.ald.layer.control.MonsterZoneControlLayerProvider
+uk.co.eduardo.abaddon.ald.layer.control.CropControlLayerProvider
