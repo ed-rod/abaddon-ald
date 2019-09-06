@@ -136,7 +136,7 @@ public class ProjectBrowser extends JComponent
       this.tree = new JTree( this.treeModel );
       this.tree.getSelectionModel().setSelectionMode( TreeSelectionModel.SINGLE_TREE_SELECTION );
       this.tree.setCellRenderer( new IconCellRenderer() );
-      this.tree.setRowHeight( this.tree.getRowHeight() + 2 );
+      // this.tree.setRowHeight( this.tree.getRowHeight() + 2 );
       setLayout( new BorderLayout() );
       add( this.tree );
    }
