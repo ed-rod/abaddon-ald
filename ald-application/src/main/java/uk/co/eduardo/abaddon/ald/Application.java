@@ -13,6 +13,7 @@ import javax.swing.JInternalFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
 import android.content.res.Resources;
@@ -68,10 +69,22 @@ public class Application
     */
    public static void main( final String[] args )
    {
-      setLookAndFeel();
       Res.resources = new Resources();
       SaveHandler.install();
 
+      SwingUtilities.invokeLater( new Runnable()
+      {
+         @Override
+         public void run()
+         {
+            startApplication( args );
+         }
+      } );
+   }
+
+   private static void startApplication( final String[] args )
+   {
+      setLookAndFeel();
       final Application application = new Application();
       application.setupUI();
 
